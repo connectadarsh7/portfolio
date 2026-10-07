@@ -1153,6 +1153,10 @@ a {
 }
 
 @media (max-width: 767px) {
+  .hero-section > .container > .row.align-items-center {
+    --bs-gutter-x: 1.5rem;
+  }
+
   .navbar-custom {
     padding: 0.75rem 0;
   }
