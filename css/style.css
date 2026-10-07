@@ -213,13 +213,19 @@ a {
   transition: all 0.2s ease;
 }
 
+
 .nav-link:hover, .nav-link.active {
+  /* margin: 0 1.5px; */
   color: var(--text-main) !important;
   background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-link.active {
   color: var(--accent-emerald) !important;
+}
+
+.navbar-nav {
+  gap: 0.2rem;
 }
 
 /* ===================================================================
