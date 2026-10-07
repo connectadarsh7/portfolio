@@ -454,7 +454,7 @@ a {
    SHOPIFY FLAGSHIP STORES (MAIN SHOWCASE)
    =================================================================== */
 .stores-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background: linear-gradient(180deg, transparent 0%, rgba(17, 23, 38, 0.6) 50%, transparent 100%);
 }
 
@@ -710,7 +710,7 @@ a {
    SPECIALIZATION & CAPABILITIES (THE SHOPIFY ADVANTAGE)
    =================================================================== */
 .skills-capabilities-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 .feature-box {
@@ -785,7 +785,7 @@ a {
    EXPERIENCE & CAREER TIMELINE
    =================================================================== */
 .experience-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background: linear-gradient(180deg, transparent 0%, rgba(17, 23, 38, 0.5) 50%, transparent 100%);
 }
 
@@ -880,7 +880,7 @@ a {
    SKILL MATRIX SECTION
    =================================================================== */
 .skills-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 .skill-category-card {
@@ -926,7 +926,7 @@ a {
    ABOUT & EDUCATION
    =================================================================== */
 .about-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 .info-box {
@@ -940,7 +940,7 @@ a {
    CONTACT SECTION
    =================================================================== */
 .contact-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
   position: relative;
 }
 
@@ -987,16 +987,6 @@ a {
   font-size: 1.25rem;
 }
 
-.channel-icon.phone {
-  background: rgba(99, 102, 241, 0.15);
-  color: var(--accent-indigo);
-}
-
-.channel-icon.linkedin {
-  background: rgba(14, 165, 233, 0.15);
-  color: #38bdf8;
-}
-
 .channel-icon.whatsapp {
   background: rgba(34, 197, 94, 0.15);
   color: #22c55e;
@@ -1041,6 +1031,19 @@ a {
   padding: 0.8rem 1.1rem;
   font-size: 0.95rem;
   transition: all 0.25s ease;
+}
+
+.form-select {
+  appearance: auto;
+  -webkit-appearance: menulist;
+  background-color: rgba(15, 23, 42, 0.9);
+  color: var(--text-main);
+}
+
+.form-select option {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 0.8rem 1rem;
 }
 
 .form-control-custom:focus {
@@ -1126,14 +1129,191 @@ a {
   .contact-card {
     padding: 2rem 1.5rem;
   }
+  .navbar-custom .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .navbar-nav {
+    gap: 0.2rem;
+  }
+  .navbar-collapse {
+    padding-top: 0.75rem;
+  }
+  .channel-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  .btn-copy-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-custom {
+    padding: 0.75rem 0;
+  }
+
+  .social-actions {
+    gap: 0.5rem !important;
+  }
+
+  .social-actions .btn {
+    padding: 0.6rem 0.75rem !important;
+    font-size: 0.76rem !important;
+    flex: 1 1 0;
+    min-width: 0;
+    white-space: nowrap;
+  }
+
+  .brand-logo {
+    font-size: 1.1rem;
+  }
+
+  .brand-badge {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    padding-top: 5.5rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  .hero-actions-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions-wrap > * {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stat-item-box {
+    padding: 1rem 0.75rem;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-channel-item {
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 0.7rem;
+    min-height: 64px;
+  }
+
+  .channel-info {
+    flex: 1 1 auto;
+    min-width: 0;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .channel-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    font-size: 0.85rem;
+    border-radius: 9px;
+  }
+
+  .channel-value {
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+
+  .channel-title {
+    font-size: 0.68rem;
+  }
+
+  .btn-copy-icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 0.72rem;
+  }
 }
 
 @media (max-width: 576px) {
+  .social-actions {
+    gap: 0.5rem !important;
+  }
+
+  .social-actions .btn {
+    padding: 0.7rem 0.5rem !important;
+    font-size: 0.72rem !important;
+    border-radius: 8px;
+    flex: 1 1 0;
+  }
+
   .section-title {
     font-size: 1.85rem;
   }
+
   .stat-number {
     font-size: 1.6rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: left;
+    padding: 0.65rem 0.9rem !important;
+  }
+
+  .hero-avatar-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .floating-badge {
+    position: static;
+    margin-bottom: 0.75rem;
+    display: inline-flex;
+  }
+
+  .floating-badge-top,
+  .floating-badge-bottom {
+    left: auto;
+    right: auto;
+    bottom: auto;
+    top: auto;
+  }
+
+  .avatar-wrapper {
+    width: min(100%, 150px);
+  }
+
+  .tech-tag {
+    font-size: 0.75rem;
+  }
+
+  .contact-card .display-6 {
+    font-size: 2.1rem !important;
   }
 }
 
